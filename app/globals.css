@@ -24,3 +24,69 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Skeleton Screen Styles */
+.skeleton-screen {
+  width: 100%;
+  padding: 20px;
+}
+
+.skeleton-header {
+  height: 40px;
+  background: linear-gradient(90deg, #f0f0f0, #e0e0e0);
+  margin-bottom: 20px;
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite linear;
+}
+
+.skeleton-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.skeleton-line {
+  height: 20px;
+  background: linear-gradient(90deg, #f0f0f0, #e0e0e0);
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite linear;
+}
+
+.skeleton-line.short {
+  width: 70%;
+}
+
+.skeleton-footer {
+  height: 60px;
+  background: linear-gradient(90deg, #f0f0f0, #e0e0e0);
+  margin-top: 20px;
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Preview Page Styles */
+.preview-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.preview-page h1 {
+  text-align: center;
+  color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  .preview-page h1 {
+    color: #ccc;
+  }
+}
