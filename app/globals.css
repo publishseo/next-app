@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+@import "react-leaflet-markercluster/styles";
 
 :root {
   --background: #ffffff;
@@ -89,4 +91,25 @@ body {
   .preview-page h1 {
     color: #ccc;
   }
+}
+
+/* Restaurant Map Cluster Icons - Red circles with white text */
+.marker-cluster-custom {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ef4444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #dc2626;
+  box-shadow: 0 2px 6px rgba(220, 38, 38, 0.4);
+}
+
+.cluster-text {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1;
 }
